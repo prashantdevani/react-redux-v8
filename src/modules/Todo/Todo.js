@@ -39,15 +39,6 @@ function Todo() {
       >
        Clear
       </button>
-      <h2>Product List</h2>
-      {productList.map((item, i) => {
-        return (
-          <div key={i}>
-            {item.name} {" --- "}
-            {item.date}
-          </div>
-        );
-      })}
     </div>
   );
 }

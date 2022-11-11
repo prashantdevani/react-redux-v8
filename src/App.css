@@ -36,3 +36,42 @@
     transform: rotate(360deg);
   }
 }
+
+.card {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px black;
+  transition: .3s;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.card .cardInfo {
+ display: flex;
+ gap: 10px;
+ flex-direction: column;
+}
+
+.card .useImage,  .card .productImage{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.productDescription {
+  word-wrap: break-word;
+  width: 200px;
+}
+
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
