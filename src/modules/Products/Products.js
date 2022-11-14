@@ -30,8 +30,8 @@ function Products() {
       {loader && "Loading products...."}
       {error}
       <button onClick={refetch} >refresh</button>
-      <div className="users">
-        {!loader && products.map((product) => (
+      <div className="products">
+        {products.map((product) => (
           <Card key={product.id}>
             <img
               className="productImage"
